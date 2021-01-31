@@ -1,0 +1,252 @@
+
+ body{
+  margin: 0;
+  font-family: 'Yusei Magic', sans-serif;
+  width: 100%;
+  /* these are defaults but you can import fonts from google for free @fonts.google.com! */
+}
+
+.container {
+  position: relative;
+  color: black;
+  width: 100%;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-ground {
+  opacity: 0.4;
+  object-fit: cover;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myDiv {
+  padding: 50px;
+  margin: 50px;
+  text-align: center;
+  background-color: rgb(180, 160, 240);
+  margin-top: 20px;
+}
+
+.sportStyle{
+  padding: 50px;
+  margin: 50px;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+.header-text {
+  position: absolute;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-line {
+  position: absolute;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  font-family: 'Yusei Magic', sans-serif;
+  position: absolute;
+  color: rgb(130, 130, 130);
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+
+.button {
+  font-family: 'Yusei Magic', sans-serif;
+  position: absolute;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: rgb(180, 160, 240);
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+.button:hover {
+  background-color: rgb(150, 130, 210);
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: rgb(180, 160, 240);
+  top: 0px;
+  width: 100%;
+  position: fixed;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 24px;
+}
+
+.navbar-left {
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  float: left;
+}
+
+.navbar-right {
+  font-size: 17px;
+  font-family: 'Yusei Magic', sans-serif;
+  float: right;
+}
+
+.aboutme {
+  font-family: 'Yusei Magic', sans-serif;
+  line-height: 110%;
+  float: left;
+  margin-left: -110;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.mepicture {
+  float: left;
+  padding: 30px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottombar {
+  background-color: rgb(100, 100, 100);
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+}
+
+/* Style the links inside the navigation bar */
+.bottombar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 24px;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 11px;
+}
+
+.bottombar-left {
+  float: left;
+}
+
+.bottombar-right {
+  float: right;
+}
+
+/* Change the color of links on hover */
+.bottombar-right a:hover {
+  font-weight: bold;
+}
+
+.hskills {
+  position: absolute;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column_skills {
+  height: 300px;
+  top: 40%;
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  margin-top: 170px;
+}
+
+.column_skills img{
+  height: 450px;
+}
+
+/* Clearfix (clear floats) */
+.row_skills::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(180, 160, 240);
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+position: relative;
+}
+
