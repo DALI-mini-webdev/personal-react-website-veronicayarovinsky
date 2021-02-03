@@ -1,4 +1,7 @@
 import './App.css';
+import React from 'react';
+import './App.css';
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   
@@ -42,9 +45,18 @@ function App() {
 
  
   return (
+
     <div className="App">
     
         <meta content="width=device-width, initial-scale=1"></meta>
+
+        <div className="navbar">
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+        </div>
+
       <head>
         <title> Veronica Yarovinsky</title>
         <link rel="stylesheet" href="app.css"></link>
