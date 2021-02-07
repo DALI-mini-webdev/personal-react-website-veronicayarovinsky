@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
+import LocationPosting from './page2';
 
 function App() {
   
@@ -51,9 +52,6 @@ function App() {
         <meta content="width=device-width, initial-scale=1"></meta>
 
         <div className="navbar">
-      <Navbar />
-      <Navbar />
-      <Navbar />
       <Navbar />
         </div>
 

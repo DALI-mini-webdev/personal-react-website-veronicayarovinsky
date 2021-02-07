@@ -1,29 +1,29 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: 'https://github.com/veronicayarovinsky',
         cName: 'nav-links'
     },
     {
-        title: 'Services',
-        url: '#',
+        title: 'Cool Places',
+        url: 'https://github.com/veronicayarovinsky',
         cName: 'nav-links'
     },
-    {
-        title: 'Products',
-        url: '#',
-        cName: 'nav-links'
-    },
-    {
-        title: 'Contact Us',
-        url: '#',
-        cName: 'nav-links'
-    },
-    {
-        title: 'Sign Up',
-        url: '#',
-        cName: 'nav-links-mobile'
-    },
+    // {
+    //     title: 'Products',
+    //     url: 'https://github.com/veronicayarovinsky',
+    //     cName: 'nav-links'
+    // },
+    // {
+    //     title: 'Contact Us',
+    //     url: 'https://github.com/veronicayarovinsky',
+    //     cName: 'nav-links'
+    // },
+    // {
+    //     title: 'Sign Up',
+    //     url: 'https://github.com/veronicayarovinsky',
+    //     cName: 'nav-links-mobile'
+    // },
 
 
 ]
