@@ -11,8 +11,21 @@ class Navbar extends Component {
 
     }
 
+    
 
     render() {
+
+        const Navbar = (props) => {
+
+            const displayComponent1 = () =>{
+                props.changeCurrPage(1)
+            }
+    
+            const displayComponent2 = () =>{
+                props.changeCurrPage(2)
+            }
+        }
+
         return(
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">Veronica<i className="fab fa-react"></i></h1>

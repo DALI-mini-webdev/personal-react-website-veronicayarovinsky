@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-const allLocations = this.state.location.entrySeq().map(
-    ([id, location]) => {
-        return <LocationPosting delete={this.delete} city={location.city} country={location.country} id={id}/>
-    }
+// const allLocations = this.state.location.entrySeq().map(
+//     ([id, location]) => {
+//         return <LocationPosting delete={this.delete} city={location.city} country={location.country} id={id}/>
+//     }
 
-)
+// )
 
 class LocationPosting extends Component {
     constructor(props) {
@@ -63,8 +63,8 @@ class LocationPosting extends Component {
         return <LocationPosting
                 save = {this.save}
                 delete = {this.delete}
-                city = {location.city}
-                country = {location.country}
+                // city = {location.city}
+                // country = {location.country}
                 id = {id}
             ></LocationPosting>
     }
