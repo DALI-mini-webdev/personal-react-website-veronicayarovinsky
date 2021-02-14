@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import LocationPosting from './page2';
 import Page3 from './page3';
 import { Component } from 'react';
+import axios from 'axios'; 
+
 
 
 
@@ -50,10 +52,40 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state={
-      currPage: "Home"
+      currPage: "Home",
+      data: null
     }
     }
 
+    fetchData = () => {
+      axios.get("https://poetrydb.org/random")
+      .then((response) => {
+          console.log(response);
+          this.setState({data: response.data[0]})
+      }).catch((error) => {
+        console.log(error)
+      })
+      
+
+    };
+
+    renderData = () => {
+      if(this.state.data) {
+          return(
+              <div>
+                <div> {this.state.data.title} </div>
+                <div> By {this.state.data.author}</div>
+                {this.state.data.lines.map((line, idx) => {
+                  return(<div key = {idx}>{line}</div>)
+                })}
+              </div>
+
+          )
+
+      }else{
+        return null
+      }
+    }
 
   changeCurrPage = (newCurrPage) => {
     this.setState({
@@ -79,14 +111,12 @@ class App extends Component {
           <div>
              <button className="button" onClick={buttonFunction}>about me</button>        
           </div>
-
+          <div> 
+            <button onClick = {this.fetchData}>click here!</button>
+            {this.renderData()}
+          </div>
          <div className="myDiv" id="myDIV">
-         Hi! I'm Veronica, a first-year at Dartmouth College.  am studying Engineering
-                     and Cognitive Science. I research in the SENSE lab at the Thayer School of Engineering,
-                     I am the assistant project manager of the Solar Stove Project of DHE, and 
-                     I am also part of a start-up called Legislate. Outside of academics, you can find me cliff diving, hiking with friends,
-                     and on the ski slopes. A cool fact about me is that I have raced against 
-                     Ryan Lochte at a swimming national championship.
+         Hi! I'm Veronica, and here is my bio!!
          </div>        
 
          <div className="sportStyle">
