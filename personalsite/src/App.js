@@ -6,6 +6,8 @@ import LocationPosting from './page2';
 import Page3 from './page3';
 import { Component } from 'react';
 import axios from 'axios'; 
+import ToDoBoard from './components/ToDoBoard';
+import Firebase from './firebase/index';
 
 
 
@@ -87,6 +89,13 @@ class App extends Component {
       }
     }
 
+
+
+  // changePage = (page) => {
+  //     props.changeCurrPage(page)
+  //  }
+
+
   changeCurrPage = (newCurrPage) => {
     this.setState({
       currPage: newCurrPage,
@@ -122,12 +131,18 @@ class App extends Component {
          <div className="sportStyle">
            <p>These are the sports I have played:</p>
            {sportMap}
-           <LocationPosting />
+           {/* <LocationPosting /> */}
+           <ToDoBoard />
 
          </div>
           </div>
           {this.renderPage()}
         </header>
+      <div className="App">
+        <LocationPosting />
+        <ToDoBoard />
+      </div>
+  );
       </div>
     );
   }

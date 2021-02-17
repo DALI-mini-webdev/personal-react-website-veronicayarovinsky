@@ -10,7 +10,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Psge 3',
+        title: 'Page 3',
         url: 'https://github.com/veronicayarovinsky',
         cName: 'nav-links'
     }

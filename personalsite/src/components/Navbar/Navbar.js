@@ -11,7 +11,9 @@ class Navbar extends Component {
 
     }
 
-    
+    // changePage = (page) => {
+    //     props.changeCurrPage(page)
+    //  }
 
     render() {
 
@@ -40,6 +42,18 @@ class Navbar extends Component {
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
                                     {item.title}
+                                    return(
+                            <li key = {index}>
+                                <div onClick = {() => {this.changePage(item.app)}}> {item.app} </div>
+                            </li>
+                            <li key = {index}>
+                                <div onClick = {() => {this.changePage(item.page2)}}> {item.page2} </div>
+                            </li>
+                            <li key = {index}>
+                                <div onClick = {() => {this.changePage(item.page3)}}> {item.page3} </div>
+                            </li>
+                            );  
+
                                     </a>
                             </li>
 
